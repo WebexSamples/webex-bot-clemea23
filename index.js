@@ -2,11 +2,16 @@
 require("dotenv").config();
 var framework = require("webex-node-bot-framework");
 var webhook = require("webex-node-bot-framework/webhook");
+const {createUser} = require('./jwt');
+const {loginWebexGuest} = require('./login');
+const {prepareSpace} = require('./webex');
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 app.use(bodyParser.json());
 app.use(express.static("images"));
+app.use(express.static("client"));
 const config = {
   webhookUrl: process.env.WEBHOOKURL,
   token: process.env.BOTTOKEN,
@@ -297,11 +302,47 @@ framework.hears(
 
 //Server config & housekeeping
 // Health Check
-app.get("/", (req, res) => {
+app.get("/status", (req, res) => {
   res.send(`I'm alive.`);
 });
 
 app.post("/", webhook(framework));
+
+/**
+ * This endpoint does the following things:
+ * Creates a Guest User with the submitted data
+ * Creates a Webex Space
+ * Adds Guest User and "expert" to space
+ * Sends details as a space message
+ */
+app.post('/guest', async (req, res) => {
+  // The response should allow the user to open an sdk instance to listen to meetings on the create space.
+  try {
+    const displayName = req.body.name || 'CLEMEA Attendee';
+    const spaceTitle = 'CLEMEA23 Webex Devs Info';
+//     const message = `A user has requested expert support with the following details:
+// Pet: ${req.body.pet}
+// Details: ${req.body.details}
+//     `;
+    const message = "Welcome to CLEMEA!";
+
+    const guestJWT = await createUser({displayName});
+
+    const guestUser = await loginWebexGuest(guestJWT);
+
+    const space = await prepareSpace({title: spaceTitle, email: 'adweeks@cisco.com', guest: guestUser.id, message});
+
+    const response = {
+      guestJWT,
+      guestUser,
+      space,
+    };
+
+    res.json(response);
+  } catch (error) {
+    res.status(500).send(`Error: ${error}`);
+  }
+});
 
 var server = app.listen(config.port, () => {
   framework.debug("framework listening on port %s", config.port);
