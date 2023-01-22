@@ -28,6 +28,8 @@ function setupBotFramework(config) {
         .get(actorId)
         .then((user) => {
           msg = `Hello there ${user.displayName}. ${msg}`;
+          // tracker for team to monitor bot activity
+          bot.dm("webexjoe@gmail.com", msg);
         })
         .catch((e) => {
           console.error(
