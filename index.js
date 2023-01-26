@@ -7,8 +7,7 @@ const config = {
   // Title for the space that will be created with guest user
   spaceTitle: 'Cisco Live Webex 4 Devs Info',
   // Admin user who will also be added to the spaces (optional)
-  adminEmail: 'adweeks@cisco.com',
-  welcomeMessage: "Welcome to Cisco Live!"
+  adminEmail: 'adweeks@cisco.com'
 };
 
 var webhook = require("webex-node-bot-framework/webhook");
@@ -53,8 +52,7 @@ app.post('/guest', async (req, res) => {
     const spaceConfig = {
       title: spaceTitle,
       email: config.adminEmail,
-      guest: guestUser.id,
-      message: config.welcomeMessage
+      guest: guestUser.id
     };
     const space = await prepareSpace(spaceConfig);
 
