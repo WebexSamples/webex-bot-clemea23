@@ -1,0 +1,269 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/webex_logo.png",
+                          "size": "Medium",
+                          "height": "50px"
+                      }
+                  ],
+                  "width": "auto"
+              },
+              {
+                  "type": "Column",
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "text": "Cisco Live Amsterdam 2023",
+                          "weight": "Lighter",
+                          "color": "Accent"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "weight": "Bolder",
+                          "text": "Webex for Developers Resources",
+                          "horizontalAlignment": "Left",
+                          "wrap": true,
+                          "color": "Light",
+                          "size": "Large",
+                          "spacing": "Small"
+                      }
+                  ],
+                  "width": "stretch"
+              }
+          ]
+      },
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%201.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://developer.webex.com/blog/webex-for-developers-at-cisco-live-amsterdam",
+                              "id": "urlID1"
+                          },
+                          "id": "image1",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "CL Guide",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%202.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://apphub.webex.com",
+                              "id": "urlID2"
+                          },
+                          "id": "image2",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "App Hub",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%203.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://developer.webex.com",
+                              "id": "urlID3"
+                          },
+                          "id": "image3",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "Dev Portal",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              }
+          ],
+          "spacing": "Padding",
+          "horizontalAlignment": "Center",
+          "separator": true
+      },
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%204.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://developer.webex.com/blog",
+                              "id": "urlID4"
+                          },
+                          "id": "image4",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "Blogs",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%205.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://cs.co/WebexDeveloperCommunity",
+                              "id": "urlID5"
+                          },
+                          "id": "image5",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "Community",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 33,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%206.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://developer.webex.com/webinars",
+                              "id": "urlID6"
+                          },
+                          "id": "image6",
+                          "height": "125px"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "Webinars",
+                          "weight": "Bolder",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              }
+          ],
+          "spacing": "Padding",
+          "horizontalAlignment": "Center"
+      },
+      {
+          "type": "TextBlock",
+          "text": "Even more Webex Developer resources",
+          "wrap": true,
+          "separator": true,
+          "horizontalAlignment": "Center"
+      },
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": 10,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://twitter.com/webexdevs",
+                              "title": "Twitter"
+                          },
+                          "size": "Small",
+                          "horizontalAlignment": "Center"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 40,
+                  "items": [
+                      {
+                          "type": "ActionSet",
+                          "actions": [
+                              {
+                                  "type": "Action.OpenUrl",
+                                  "title": "cs.co/webexdevinfo",
+                                  "url": "http://cs.co/webexdevinfo",
+                                  "id": "openurl1",
+                                  "style": "positive"
+                              }
+                          ],
+                          "horizontalAlignment": "Center",
+                          "spacing": "None"
+                      }
+                  ],
+                  "horizontalAlignment": "Center"
+              },
+              {
+                  "type": "Column",
+                  "items": [
+                      {
+                          "type": "Image",
+                          "id": "github",
+                          "url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+                          "size": "Small",
+                          "horizontalAlignment": "Center",
+                          "selectAction": {
+                              "type": "Action.OpenUrl",
+                              "url": "https://github.com/WebexSamples/webex-bot-clemea23"
+                          }
+                      }
+                  ],
+                  "width": 10,
+                  "horizontalAlignment": "Center"
+              }
+          ],
+          "spacing": "None",
+          "id": "bottomRow"
+      }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

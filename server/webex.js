@@ -10,11 +10,10 @@ if (!process.env.WEBEX_ACCESS_TOKEN) {
  * @param {Object} param
  * @param {string} param.title Title of the space to create.
  * @param {string} param.email Email address of additional webex user to add to the space.
- * @param {string} param.message Message to send to the space after creating.
  * @param {string} param.guest ID of the guest user to add to the space.
  * @returns
  */
-async function prepareSpace({title, email, message, guest}) {
+async function prepareSpace({title, email, guest}) {
   // Create a Room
   const room = await webex.rooms.create({title});
   // Add the Webex User
@@ -28,11 +27,6 @@ async function prepareSpace({title, email, message, guest}) {
   await webex.memberships.create({
     roomId: room.id,
     personId: guest,
-  });
-  // Send the details as a room message
-  await webex.messages.create({
-    roomId: room.id,
-    text: message,
   });
 
   return room;
