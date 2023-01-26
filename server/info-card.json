@@ -49,14 +49,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%201.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-guide.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://developer.webex.com/blog/webex-for-developers-at-cisco-live-amsterdam",
                               "id": "urlID1"
                           },
                           "id": "image1",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
@@ -72,14 +73,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%202.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-apphub.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://apphub.webex.com",
                               "id": "urlID2"
                           },
                           "id": "image2",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
@@ -95,14 +97,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%203.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-portal.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://developer.webex.com",
                               "id": "urlID3"
                           },
                           "id": "image3",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
@@ -126,14 +129,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%204.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-blogs.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://developer.webex.com/blog",
                               "id": "urlID4"
                           },
                           "id": "image4",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
@@ -149,14 +153,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%205.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-community.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://cs.co/WebexDeveloperCommunity",
                               "id": "urlID5"
                           },
                           "id": "image5",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
@@ -172,14 +177,15 @@
                   "items": [
                       {
                           "type": "Image",
-                          "url": "https://www.sparkintegration.club/webex-cleur23-wbxresources/Picture%206.png",
+                          "url": "https://raw.githubusercontent.com/WebexSamples/webex-bot-clemea23/main/images/card-webinars.png",
                           "selectAction": {
                               "type": "Action.OpenUrl",
                               "url": "https://developer.webex.com/webinars",
                               "id": "urlID6"
                           },
                           "id": "image6",
-                          "height": "125px"
+                          "height": "125px",
+                          "width": "125px"
                       },
                       {
                           "type": "TextBlock",
