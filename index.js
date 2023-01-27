@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require('path');
 
 const config = {
   webhookUrl: process.env.WEBHOOKURL,
@@ -20,8 +21,8 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 app.use(bodyParser.json());
-app.use(express.static("images"));
-app.use(express.static("client"));
+app.use(express.static(path.join(__dirname, "images")));
+app.use(express.static(path.join(__dirname, "client")));
 
 // init framework
 var framework = setupBotFramework(config);
