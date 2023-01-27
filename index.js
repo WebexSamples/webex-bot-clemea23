@@ -7,7 +7,7 @@ const config = {
   // Title for the space that will be created with guest user
   spaceTitle: 'Cisco Live Webex 4 Devs Info',
   // Admin user who will also be added to the spaces (optional)
-  adminEmail: 'adweeks@cisco.com'
+  adminEmail: ''
 };
 
 var webhook = require("webex-node-bot-framework/webhook");
@@ -33,7 +33,7 @@ app.get("/status", (req, res) => {
   res.send(`I'm alive.`);
 });
 
-app.post("/", webhook(framework));
+app.post("/framework", webhook(framework));
 
 /**
  * This endpoint does the following things:
@@ -69,6 +69,7 @@ app.post('/guest', async (req, res) => {
 });
 
 var server = app.listen(config.port, () => {
+  console.log('app.listen on port', config.port);
   framework.debug("framework listening on port %s", config.port);
 });
 
