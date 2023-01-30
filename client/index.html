@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Welcome to Cisco Live!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./skeleton.css">
     <link rel="stylesheet" href="./style.css">
     <!-- Latest compiled and minified CSS for Space Widget-->
     <link rel="stylesheet" href="https://code.s4d.io/widget-space/production/main.css">
@@ -9,13 +14,24 @@
     <script type="text/javascript" src="./main.js"></script>
   </head>
   <body>
-    <div id="guestInput">
-      <h1>Welcome to Cisco Live with Webex for Developers</h1>
-      <h2>In this demo, we'd like to show you the power of the Webex Developer Platform</h2>
-      <label for="displayName">What should our bot call you?</label>
-      <input placeholder="Your Name" id="displayName"><button id="goGuest" onclick="handleGuest()">Go</button>
+    <div id="widget" style="display: none;"></div>
+    <div class="container" id="guestInput">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h3>Welcome to Cisco Live with Webex for Developers</h3>
+          <h4>In this demo, we'd like to show you the power of the Webex Developer Platform</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <form>
+            <label for="displayName">What should our bot call you?</label>
+            <input placeholder="Your Name" id="displayName" class="u-full-width">
+            <button id="goGuest" onclick="handleGuest()" class="button-primary">Go</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div id="widget" style="display: none; height: 500px; width: 500px;"></div>
     <div id="status">Waiting...</div>
     <!-- Latest compiled and minified JavaScript for Space Widget -->
     <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
